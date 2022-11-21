@@ -14,7 +14,7 @@ const Chat = () => {
     const username = sessionStorage.getItem("username");
 
     const createMessage = useCallback(() => {
-        axios.post("/messages", {
+        axios.post("/api/messages", {
             message: newMessageText
         }).then(() => {
             setNewMessageText("");

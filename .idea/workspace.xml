@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="270efe17-456a-4b9a-88ba-30f0322106a1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/iu-chat-frontend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="270efe17-456a-4b9a-88ba-30f0322106a1" name="Changes" comment="fixed weird startup problem; added basic firebase deploy config">
+      <change afterPath="$PROJECT_DIR$/functions/config/firebase-initializer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/config/service-account.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/config/service-account.sample.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/iu-chat-frontend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/iu-chat-frontend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/axios-hook.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/axios-hook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/chat.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,9 +45,15 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "com.google.cloudcode.ide_session_index": "20221121_0001",
+    "last_opened_file_path": "C:/Users/Admin/IdeaProjects/iu-chat-frontend/functions",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\IdeaProjects\iu-chat-frontend\functions" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -72,11 +79,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669069877323</updated>
-      <workItem from="1669069878772" duration="907000" />
+      <workItem from="1669069878772" duration="2476000" />
     </task>
+    <task id="LOCAL-00001" summary="fixed weird startup problem; added basic firebase deploy config">
+      <created>1669070907971</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669070907971</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixed weird startup problem; added basic firebase deploy config" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed weird startup problem; added basic firebase deploy config" />
   </component>
 </project>
