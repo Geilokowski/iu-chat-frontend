@@ -1,38 +1,185 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  background: #222;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main {
+  width: 400px;
+  margin: 100px auto;
+  background: #fff;
+  border-radius: 5px 5px 3px 3px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.chat {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 15px;
+}
+
+.head {
+  background: #404040;
+  color: #fff;
+  text-transform: uppercase;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding: 10px;
+  position: relative;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  padding-left: 8px;
+  flex: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.divider {
+  margin: 30px 20px 30px 20px;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background: #dddddd;
+  position: relative;
+  z-index: 1;
+}
+
+.bubble {
+  max-width: 60%;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.bubble:last-child {
+  margin-bottom: 0;
+}
+
+.bubble-content-left {
+  padding: 10px;
+  font-size: 0.8rem;
+  margin-left: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.bubble-content-right {
+  padding: 10px;
+  font-size: 0.8rem;
+  margin-right: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.bubble-content-left {
+  background-color: #e7edf5;
+  border-radius: 0px 3px 3px 3px;
+}
+
+.bubble-content-left::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7.5px;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-right-color: #e7edf5;
+  border-left: 0;
+  border-top: 0;
+  margin-top: -7.5px;
+  margin-left: -5px;
+}
+
+.bubble-content-right {
+  background-color: #f2f2f2;
+  border-radius: 3px 0px 3px 3px;
+}
+
+.bubble-content-right::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 7.5px;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-left-color: #f2f2f2;
+  border-right: 0;
+  border-top: 0;
+  margin-top: -7.5px;
+  margin-right: -5px;
+  z-index: 2;
+}
+
+.hour {
+  color: #b5adaa;
+  font-size: 0.7rem;
+  padding: 0 0 3px 0;
+}
+
+.bubble-left .hour {
+  margin-left: 20px;
+}
+
+.bubble-right .hour {
+  margin-right: 20px;
+}
+
+.bubble-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-self: flex-end;
+}
+
+.write-section {
+  border-top: solid 1px #dddddd;
+  margin: 0 20px;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.type-text {
+  border: none;
+  padding: 10px;
+  width: 79%;
+  font-size: 1rem;
+}
+
+.type-text:focus {
+  outline: none;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button {
+  width: 20%;
+  text-transform: uppercase;
+  border: 0;
+  background: transparent;
+  color: #7b94ce;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: transform 0.5s;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:active {
+  transform: scale(0.9);
 }
